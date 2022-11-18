@@ -1,0 +1,58 @@
+{%extends 'base.html'%}
+{% load static%}
+
+{%block title%}Contacts{%endblock%}
+{%block content%}
+<h5 class="text-center text-white pb-5">Contacts Us</h5>
+<div class="container text-center ps-5 pe-1 me-2">
+    <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="height:100px;">
+              <h5 class="card-title">DreamCreations</h5>
+              <p class="card-text">Sea Port- Air Port Road, Thrikkakara, Kochi, Kerala, India</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body" style="height:100px;">
+                <h5 class="card-title">Email Us</h5>
+                <p class="card-text">info@dreamcreations.org.in</p>
+                
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="height:100px;">
+              <h5 class="card-title">Call Us</h5>
+              <p class="card-text">9745287817</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<section>
+    <div class="container pt-5">
+        <h5 class="text-center text-white "> Get in touch</h5>
+        <p class="text-white text-wrap text-center">
+            Get in touch
+        If you have any questions about us, simply use the form below. We will respond to all queries and comments within 24 hours.
+        </p>
+        <br>
+        <div class="container text-center text-white w-50">
+
+          <form action="" method="POST">
+              {%csrf_token%}
+              {{form.as_p}} 
+             
+              <br>
+              <button class=" btn btn-success mb-5"type="submit">Submit</button>
+          </form>
+          </div>
+    </div>
+</section>
+{%endblock%}

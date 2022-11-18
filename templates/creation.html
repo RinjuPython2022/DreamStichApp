@@ -1,0 +1,83 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block title%}Creations{%endblock%}
+{%block content%}
+<h5 class="text-center text-white pb-3 pt-1"> Our Creations</h5>
+<div class="container-lg">
+    <div class="row row-cols-1 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/shirt.png'%}" class="card-img-top w-100" style="width: 200px;;height: 200px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shirt</h5>
+              <p class="card-text">Price:1500.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/carousel2.png'%}" class="card-img-top w-100" style="width: 260px;;height: 200px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Skirt</h5>
+              <p class="card-text">Price:1200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="{% static 'images/carousel3.png'%}" class="card-img-top w-100" style="width: 260px;;height: 200px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tops</h5>
+                <p class="card-text">Price:600.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'images/blouse.jpg'%}" class="card-img-top w-100" style="width: 260px;;height: 200px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Blouse</h5>
+                <p class="card-text">Price:700.00</p>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/trouser.jpg'%}" class="card-img-top w-100" style="width: 200px;;height: 200px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Trouser</h5>
+              <p class="card-text">price:2000.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/kurthi.jpg'%}" class="card-img-top w-100" style="width: 200px;;height: 200px;"alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kurthi</h5>
+              <p class="card-text pb-4">Price:800.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="{% static 'images/frock.jpg'%}" class="card-img-top w-100" style="width: 200px;;height: 200px;"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Frock</h5>
+                <p class="card-text pb-4">Price:900.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'images/onam.jpg'%}" class="card-img-top w-100" style="width: 200px;;height: 200px;"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Traditional Dress</h5>
+                <p class="card-text pb-4">Price:1600.00</p>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+{%endblock%}
